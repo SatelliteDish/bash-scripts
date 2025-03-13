@@ -6,8 +6,10 @@ max_options=10
 
 options=(
   ["Spotify"]="spotify-launcher"
+  ["Blender"]="/home/Michael/blender/blender"
   ["Steam"]="steam"
-  ["Discord"]="firefox www.discord.com"
+  ["Discord"]="discord"
+  ["Discord Firefox"]="firefox www.discord.com"
   ["Edit Neovim"]="st -e nvim /home/Michael/.config/nvim"
   ["PavuControl"]="pavucontrol"
   ["Keepassxc"]="keepassxc"
@@ -19,6 +21,11 @@ options=(
   ["Godot"]="godot-mono-bin"
   ["Android Studio"]="bash ~/apps/android-studio/bin/studio.sh"
   ["Zen"]="zen-browser"
+  ["Minecraft"]="minecraft-launcher"
+  ["VLC"]="vlc"
+  ["Slippi"]="slippi-launcher"
+  ["Thunderbird"]="thunderbird"
+  ["Slack"]="slack"
 )
 options_len=${#options[@]}
 option_count=$((options_len<max_options ? options_len : max_options))

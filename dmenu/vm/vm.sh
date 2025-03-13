@@ -6,6 +6,7 @@ max_options=10
 
 options=(
   ["Windows 11"]="qemu-system-x86_64 -hda /home/Michael/.vm-isos/Win11.img -accel kvm -cpu max -smp 4 -m 16G -usbdevice tablet"
+  ["Kali"]="qemu-system-x86_64 -hda /home/Michael/.vm-isos/kali-linux-2024.3-qemu-amd64.qcow2 -accel kvm -cpu max -smp 4 -m 16G -usbdevice tablet"
 )
 
 options_len=${#options[@]}

@@ -26,9 +26,17 @@ options=(
   ["Slippi"]="slippi-launcher"
   ["Thunderbird"]="thunderbird"
   ["Slack"]="slack"
+  ["Files"]="lf"
+  ["LiveSplit"]="open_livesplit"
+  ["Burpsuite"]="burpsuite"
 )
 options_len=${#options[@]}
 option_count=$((options_len<max_options ? options_len : max_options))
+
+
+open_livesplit() {
+  wine /home/Michael/programs/livesplit/LiveSplit.exe &
+}
 
 for i in "${!options[@]}";do
   input="${input}${i}\n"

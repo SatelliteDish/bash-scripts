@@ -2,7 +2,7 @@
 
 searchTerm=$(dmenu -p "Search:" < /dev/null)
 
-if[ "$searchTerm" != "" ];then
-  firefox --search "$searchTerm"
+if [ "${searchTerm}" != "" ];then
+  qutebrowser "$searchTerm"
 fi
 
